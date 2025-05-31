@@ -1,0 +1,100 @@
+#nav{
+    z-index: 1000;
+}
+
+#nova:hover{
+    transform: scale(1.5);
+    transition-duration: 3s;
+}
+#drop2{
+    display: none;
+    box-shadow: 0px 2px 1px black;
+    font-size: 1.1rem;
+}
+#drop3{
+    display: none;
+}
+
+#drop1:hover #drop3{
+    display: block;
+    border: none;
+}
+#drop1:hover #drop2{
+    display: block;
+}
+#get:hover{
+    transform: translateY(-5px);
+    transition: 1s ease-in-out;
+}
+
+#get:not(:hover){
+    transition: 1s ease-in-out;
+}
+
+#ab{
+    color:#ff4e0c ;
+    padding: 6px 15px;
+}
+
+
+#ab:hover{
+    color: rgb(11, 1, 1);
+    background-color: rgb(214, 210, 210);
+}
+
+#svg{
+    display: none;  
+    /* color: #ff4e0c; */
+}
+#nav{
+    background-color: #fffffe;
+}
+#btc{
+    width: 147px;
+    animation: button 5s ease-in ;
+}
+#btc:hover{
+    transform: translateY(-7px);
+    transition: 1s ease-in-out;
+}
+#btc:not(:hover) {
+    transition: 1s ease-in-out;
+}
+
+#btc:hover #svg{
+    display: inline-block;
+    font-size: 12px;
+    color: #fffffe;
+}
+
+#wallet{
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+    gap: 30px;
+    padding: 0px 250px;
+    border: 4px solid #ffc107;
+}
+
+.animate__animated.animate__slideInRight{
+    --animate-duration: 4s;
+}
+.animate__animated.animate__slideInLeft{
+    --animate-duration: 4s;
+    --animate-delay:3s;
+}
+
+
+@media screen and (max-width:480px) {
+    body{
+        overflow-x: hidden;
+    }
+    #wallet{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    #wallet img{
+        width: 100%;
+    }
+}

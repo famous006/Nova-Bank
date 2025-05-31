@@ -1,0 +1,115 @@
+body{
+    overflow-x: hidden;
+}
+#nav{
+    z-index: 1000;
+}
+
+#nova:hover{
+    transform: scale(1.5);
+    transition-duration: 3s;
+}
+#drop2{
+    display: none;
+    box-shadow: 0px 2px 1px black;
+    font-size: 1.1rem;
+}
+#drop3{
+    display: none;
+}
+
+#drop1:hover #drop3{
+    display: block;
+    border: none;
+}
+#drop1:hover #drop2{
+    display: block;
+}
+#get:hover{
+    transform: translateY(-5px);
+    transition: 1s ease-in-out;
+}
+
+#get:not(:hover){
+    transition: 1s ease-in-out;
+}
+
+#ab{
+    color:#ff4e0c ;
+    padding: 6px 15px;
+}
+
+
+#ab:hover{
+    color: rgb(11, 1, 1);
+    background-color: rgb(214, 210, 210);
+}
+
+#we{
+    font-size: 3rem;
+    color: #ff4e0c;
+}
+
+#you p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#svg{
+    display: none;  
+    /* color: #ff4e0c; */
+}
+
+#btc{
+    width: 147px;
+    animation: button 5s ease-in ;
+}
+#btc:hover{
+    transform: translateY(-7px);
+    transition: 1s ease-in-out;
+}
+#btc:not(:hover) {
+    transition: 1s ease-in-out;
+}
+
+#btc:hover #svg{
+    display: inline-block;
+    font-size: 12px;
+    color: #fffffe;
+}
+
+#cont{
+    margin-left: 150px;
+    margin-top: 100px;
+}
+#co{
+    margin-left: 150px;
+}
+
+.animate__animated.animate__slideInRight{
+    --animate-duration: 4s;
+}
+
+#img:hover{
+    img {
+        transform: translateY(-50px);
+        transition: transform 1s ease-in-out;
+    }
+}
+
+#img:not(:hover) {
+    img{
+        transition: transform 1s ease-in-out;
+    }
+}
+@media screen and (max-width:891px)  {
+    #cont{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    #co{
+        margin-left: 0px;
+        width: 100vw;
+    }
+    
+}
