@@ -3,6 +3,7 @@ body{
 }
 #nav{
     z-index: 1000;
+    background-color: #fffffe;
 }
 
 #nova:hover{
@@ -79,7 +80,7 @@ body{
 }
 
 #cont{
-    margin-left: 150px;
+    margin: auto;
     margin-top: 100px;
 }
 #co{
